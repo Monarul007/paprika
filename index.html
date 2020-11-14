@@ -1,0 +1,602 @@
+<style>
+.single-allergence{text-align: center;
+    /* background: rgb(255 255 255 / 51%); */
+    padding: 20px 0;
+    margin: 10px;
+    border-radius: 100%;}
+.single-allergence img{height: 80px;}
+.topbar-bottom {
+    border: 1px solid #e0e0e0;
+    background: #fff;
+    padding: 10px;
+}
+
+.page-section {
+    height: auto;
+    padding: 5px;
+    margin: 20px 0;
+}
+
+.page-section .dish-content {
+    border-bottom: 1px dashed #ddd;
+    padding: 0px 0px 3px 0px;
+    margin-bottom: 10px;
+}
+
+.page-section .section_title h5 {
+    color: #ed1a3b;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.description{
+    font-size: 12px;
+}
+
+.page-section .cat_has_child {
+    font-weight: 600;
+    font-size: 13px;
+}
+
+
+.dish-left-content {
+    float: left;
+    display: inline-flex;
+    margin-right: 5px;
+    font-size: 13px;
+    display: block;
+    font-weight: 700;
+    margin-top: 5px;
+}
+
+.page-section .dish-right-content {
+    float: right;
+    display: inline-flex;
+    line-height: 40px;
+}
+
+.page-section .dish-right-content .ui-order-btn i {
+    border: 1px solid #ececec;
+    padding: 3px 4px;
+    border-radius: 50%;
+    margin-top: 5px;
+    font-size: 10px;
+}
+
+.page-section .dish-right-content .ui-order-btn a {
+    background-color: #ed1a3b;
+    border: 1px solid #ed1a3b;
+    color: #fff;
+    text-decoration: none;
+    box-shadow: 4px 0 4px #efefef;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+.page-section .dish-right-content .dish-price {
+    margin-right: 15px;
+    font-size: 13px;
+    display: block;
+    text-align: left;
+    font-weight: 700;
+    float: left;
+}
+
+.page-section .dish-right-content {
+    line-height: 40px;
+}
+
+.popular-table{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.popular-table tr td{
+    padding: 10px;
+    border-bottom: 1px solid #f8ea7f;
+}
+
+.mobile{
+    display: none;
+}
+
+.section-title h2, p{
+    
+    color: #FFF;
+}
+
+.feature-box{
+    height: 390px;
+}
+
+@media  only screen and (max-width: 479px) {
+    
+    .popular-table{
+        width: 100%;
+    }
+    #carouselExampleSlidesOnly{margin-top: 76px !important;}
+    .single-allergence{margin: 10px 0; background: none;}
+}
+
+</style>
+
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="The Grill Template">
+    <meta name="keywords" content="The Grill, Unique, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrf-token" content="fzhhHTLMiQCfWwrxD1gW1lqlGCYPeUlvweW2AYG2" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home - The Grill</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Stalemate&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="public/css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="public/css/flaticon.css" type="text/css">
+    <link rel="stylesheet" href="public/css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="public/css/barfiller.css" type="text/css">
+    <link rel="stylesheet" href="public/css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="public/css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="public/css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="public/css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="public/css/style.css" type="text/css">
+</head>
+
+<body>
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="container-fluid" style="padding-left:0 !important; padding-right: 0 !important; height: 100px;">
+            <div class="container">
+            <nav class="navbar navbar-expand-lg desktop" style="padding-left: 0 !important; padding-right: 0 !important;">
+                <div class="row" style="width: 100%; margin-top: 10px;">
+                    <div class="col-4">
+                        <a href="index.html">
+                            <div class="row">
+                                <div class="col-3">
+                                    <img src="public/images/theme/logo.png" style="height: 60px; width: auto;">
+                                </div>
+                                <div class="col-9 p-0">
+                                    <span style="font-family: 'Stalemate', cursive;color:#fff; line-height: 40px; font-size: 52px;">Paprika</span><br>
+                                    <span style="color: #FFF; font-size: 12px;">Restaurant</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="col-5" style="width: 100%;">
+                       <div class="d-flex">
+                          <div class="phonering-alo-phone phonering-alo-green phonering-alo-show" id="phonering-alo-phoneIcon">
+                            <div class="phonering-alo-ph-circle"></div>
+                             <div class="phonering-alo-ph-circle-fill"></div>
+                            <a href="tel:01977-277452" class="pps-btn-img" title="Paprika">
+                             <div class="phonering-alo-ph-img-circle fa fa-phone"></div>
+                             </a>
+                            </div>
+                          <a href="tel:01977-277452" class="" style="font-size: 26px; color: #FFF; padding: 10px; position: relative; margin-left: 35px;"> 01977-277452</a>
+                          
+                          <!---<a href="https://www.thegrilloldham.co.uk/menu" class="" ><img src="https://www.thegrilloldham.co.uk/public/images/theme/order_now1.png" style="width: 150px; height: 50px; display: inline-block; margin: 10px 30px;"></a>---->
+                      </div>
+                     
+                    </div>
+                  
+                    
+                    <div class="col-3">
+                        <div class="header__nav">
+                            
+                
+                            <div class="header__menu__right">
+                                  
+                                        <i class="fa fa-user" aria-hidden="true" style="font-size:42px; color:#f8ea7f"></i>
+                                  
+                             </div>
+                            
+                            <div class="header__menu__right" style="margin-right: 30px;">
+                                  
+                                       <span style="font-size:12px; color:#f8ea7f; text-align: left;">Welcome!</span><br>
+                                       
+                                                                              
+                                            <span style="font-size:12px; color:#9ec16e;"><a href="user_register.html" style="font-size:12px; color:#f8ea7f;">Sign Up</a> / <a href="login.html" style="font-size:12px; color:#f8ea7f;">Login</a></span>
+                                                                         
+                             </div>
+                            
+                             <div class="header__menu__right">
+                                  <a class="cd-img-replace open-cart" href="#">
+                                        <div class="single-item" style="float: left;">
+                                          <div class="icon">
+                                          	<img src="public/images/theme/cart.png" style="width: 50px; height: 45px;">
+                                            <!----<i class="fa fa-shopping-cart" style="font-size: 42px; color: #00aeef;"></i> ---->
+                                          </div>
+                                          <div class="content">
+                                            <div class="text-left cartCount mini-item-total" id=""><span class="badge badge-danger cart_total"> 0</span></div>
+                                            <div class="cart-txt"  style="color: #f8ea7f;">Your&nbsp;Cart</div>
+                                          </div>
+                                        </div>
+                                     </a>
+                             </div>
+                             
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            </div>
+            
+            <nav class="navbar navbar-expand-lg mobile mobileShow" style="background-color:#210e07; display:none; ">
+                <div class="container">
+                    <div class="row" style="width: 100%;">
+                        <div class="col-3">
+                            <a class="navbar-brand" href="index.html"><img src="../thegrilloldham.co.uk/images/theme/logo_png.png" style="height: 50px; width: auto;"></a>
+                        </div>
+                        
+                        <div class="col-6" style="font-size:12px; color:#9ec16e; text-align: center;">
+                            
+                                                                   
+                                    <span ><a href="user_register.html" style="font-size:12px; color:#9ec16e;">Sign Up</a></span> / <span><a href="login.html" style="font-size:12px; color:#9ec16e;">Login</a></span>
+                                
+                                                                
+                              <div style="padding-top:10px;">
+                                  <img src="public/images/theme/call_us.png" style="height: 30px; width: auto;">
+                                  <a href="tel:01614592184" class="" style="font-size: 15px; color: #FFF;"> 01614592184</a>
+                              </div>
+                            
+                        </div>
+                        <div class="col-3" style="padding-top: 5px;">
+                            <a class="cd-img-replace open-cart" href="#">
+                                    <div class="single-item" style="float: left; position: relative;">
+                                      <div class="icon">
+                                      	<img src="public/images/theme/cart.png" style="width: 50px; height: 40px;">
+                                        <!-- <i class="far fa-user"></i> --> 
+                                      </div>
+                                      <div class="content" style=" position: relative; z-index:9; margin-left: 55px; margin-top: 20px;">
+                                        <div class="text-left cartCount mini-item-total" id=""><span class="badge badge-danger cart_total"> 0</span></div>
+                                        
+                                      </div>
+                                    </div>
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+
+              <div class="collapse navbar-collapse" id="navbarToggler">
+                <!-- <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                  </li>
+                </ul> --->
+              </div>
+            </nav>
+         
+        </div>
+    </header>
+    <!-- Header Section End -->
+    
+    <!-- Carousel Section Begin -->
+    
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" style="position: relative; margin-top: 10px;">
+        <video width="100%" height="auto" autoplay muted loop>
+            <source src="public/images/theme/front_video.mp4" type="video/mp4">
+        </video>
+    </div>
+    
+    <!-- Carousel Section End -->
+    
+    <div class="flying_cart" style="height:70px; width: 70px; position: fixed; top: 15%; left:40%; z-index:999; display: none;">
+        <img src="images/theme/cart1.gif" style="width: 100%; height: 100%;">
+    </div>
+        <!-- Categories Section Begin -->
+    <section class="categories spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h2>Welcome</h2>
+                        <p style="text-align: justify;">
+                            We’re delighted that our doors are now open, offering a beautiful yet safe destination for everyone. Paprika welcomes you and your guests to our vibrant and friendly restaurant that serves English/Halal Breakfast, Lunch and Dinner. It attracts customers not only from Oldham but as far as Leeds and Liverpool who love to dine with us and try our amazing dishes prepared by amazing chefs. Book in advance to avoid disappointment call <strong>0161 459 2184</strong> and if you are not ready to dine in yet try our takeaway service for collection or delivery (3 Mile Radius Only). www.thegrilloldham.co.uk
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="listing-details">
+        <div class="container">
+                <!--features part start-->
+            <section class="features section-padding">
+                <div class="container">
+                    <div class="feature-heading">
+                        <h6 class="feature-subtitle text-center">OFFERS</h6>
+                        <h1 class="feature-big text-center">OUR OFFERS</h1>
+                        <div class="text-center">∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="feature-box">
+                                <img src="public/images/theme/phpe1DZsO1598173246.jpg" style="width: 100%; height: auto;">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="feature-box">
+                                <img src= "public/images/theme/phpCE8pNc1598173246.jpg" style="width: 100%; height: auto;">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="feature-box">
+                                <img src="public/images/theme/phpGI6a7d1602355160.jpg" style="width: 100%; height: auto;">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="feature-box">
+                                <img src="public/images/theme/122827819.png" style="width: 100%; height: auto;">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="feature-box">
+                                <img src="public/images/theme/122836800.png" style="width: 100%; height: auto;">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="feature-box">
+                                <img src="public/images/theme/123077047.png" style="width: 100%; height: auto;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--features part end-->
+        
+            <!--Reserve part start-->
+            <section class="reserve spad">
+                <div class="container">
+                    <div class="feature-heading">
+                        <h6 class="feature-subtitle text-center">RESERVE</h6>
+                        <h1 class="feature-big text-center">RESERVE A TABLE</h1>
+                        <div class="text-center">∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷</div>
+                    </div>
+                    <form method="POST" class="col-md-9 m-auto" style="padding-top: 10px; border-radius: 10px; background: #200122; background: -webkit-linear-gradient(to right, #6f0000, #200122);background: linear-gradient(to right, #6f0000, #200122);">
+                        <div class="col-md-12 mt-3">
+                            <div class="form-row mb-2">
+                                            <div class="form-group col-md-6">
+                                    <label for="datetime">Choose Date</label>
+                                    <input type="date" name="datetime" class="form-control" id="datetime">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="time">Choose Time</label>
+                                    <div class="input-group clockpicker" data-autoclose="true">
+                                        <input type="text" name="time" id="time" class="form-control" placeholder="Pick Time">
+                                        <div class="input-group-append">
+                                            <span class="input-group-text"><i class="fa fa-clock-o"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <input type="text" name="visitor_name" placeholder="Enter Name" class="form-control" id="visitor_name">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <input type="text" name="visitor_phone" placeholder="Enter Phone Number" class="form-control" id="visitor_phone">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <input type="number" name="num_visitor" id="num_visitor" class="form-control" placeholder="Number of visitors" min="1">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <input type="text" name="visitor_email" placeholder="Enter Email Address..." class="form-control" id="visitor_email">
+                                </div>
+                            </div>
+                            <textarea name="visitor_message" class="form-control" id="visitor_message" rows="3" placeholder="If you have any special instruction or message can describe here"></textarea>
+                            <input type="button" onclick="sendEmail()" value="CONFIRM BOOKING" class="btn btn-warning mt-3 mb-5 confirm_btn">
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <!--Reserve part end-->
+    
+            <!--Popular part start-->
+            <section class="popular spad">
+                <div class="container">
+                    <div class="feature-heading">
+                        <h6 class="feature-subtitle text-center">POPULAR</h6>
+                        <h1 class="feature-big text-center">POPULAR FOODS</h1>
+                        <div class="text-center">∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷</div>
+                    </div>
+                    
+                        <div class="row">                    
+                           <div class="col-md-6">
+                               <table class="popular-table">                             
+                                    <tr>
+                                        <td><img src="public/images/food/phpfJXe3k1592385252.jpg" style="height: 70px; width: 70px; border-radius: 50%;" class=""></td>
+                                        <td>Buttered Corn on Cob (2)</td>
+                                        <td>2.25</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="public/images/food/phpF2zZ371592384002.jpg" style="height: 70px; width: 70px; border-radius: 50%;" class=""></td>
+                                        <td>Bhuna (Medium)</td>
+                                        <td>5.95</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="public/images/food/phpfdVP4Z1592471852.jpg" style="height: 70px; width: 70px; border-radius: 50%;" class=""></td>
+                                        <td>1/2 Chicken Sizzler</td>
+                                        <td>7.95</td>
+                                    </tr> 
+                                </table>
+                            </div>
+                            <div class='col-md-6'>
+                                <table class='popular-table'>
+                                       <tr>
+                                           <td><img src="public/images/food/phpQSATs71592385302.jpg" style="height: 70px; width: 70px; border-radius: 50%;" class=""></td>
+                                           <td>Buttered Bread Roll (2)</td>
+                                           <td>2.25</td>
+                                       </tr>
+                                       <tr>
+                                           <td><img src="public/images/food/phpj0yx6Q1592385625.jpg" style="height: 70px; width: 70px; border-radius: 50%;" class=""></td>
+                                           <td>Boiled Rice</td>
+                                           <td>2.25</td>
+                                       </tr>
+                                       <tr>
+                                           <td><img src="public/images/food/phpfdVP4Z1592471852.jpg" style="height: 70px; width: 70px; border-radius: 50%;" class=""></td>
+                                           <td>1/2 Chicken Sizzler</td>
+                                           <td>7.95</td>
+                                       </tr>    
+                                </table>
+                            </div>
+                        </div>
+                    
+                    <div class="row">
+                        
+                        <!-----------------<div class="col-12">
+                            <div style="width: 200px; margin: 20px auto;"><a href="menu" class="btn btn-rounded mt-3 text-center" style="width: 100%;">View Full Menu</a></div>
+                        </div>-------------------->
+                        
+                    </div>
+                    
+                </div>
+            </section>
+            
+            <section class="allergence">
+                <div class="container p-0">
+                    <div class="mb-5 mt-4 feature-heading">
+                        <h2 class="text-center feature-big">ALLERGY WARNING</h2>
+                        <p class="text-center mt-2">Please Enquire When Placing Order. We Cannot Guarantee Our Dishes To Be 100% Nut Or Peanut Free </br> As Nuts & Peanuts Are Used In The Premises</p>
+                    </div>
+                    <div class="row col-md-8 col-12 m-auto p-0">
+                        <div class="col-md-2 col-3 single-allergence">
+                            <img src="public/images/theme/150w/gluten.png" alt="" width="50px">
+                        </div>
+                        <div class="col-md-2 col-3 single-allergence">
+                            <img src="public/images/theme/150w/milk.png" alt="" width="50px">
+                        </div>
+                        <div class="col-md-2 col-3 single-allergence">
+                            <img src="public/images/theme/150w/mushroom.png" alt="" width="50px">
+                        </div>
+                        <div class="col-md-2 col-3 single-allergence">
+                            <img src="public/images/theme/150w/mustrard.png" alt="" width="50px">
+                        </div>
+                        <div class="col-md-2 col-3 single-allergence">
+                            <img src="public/images/theme/150w/nuts.png" alt="" width="50px">
+                        </div>
+                        <div class="col-md-2 col-3 single-allergence">
+                            <img src="public/images/theme/150w/peanuts.png" alt="" width="50px">
+                        </div>
+                        <div class="col-md-2 col-3 single-allergence">
+                            <img src="public/images/theme/150w/sugar.png" alt="" width="50px">
+                        </div>
+                        <div class="col-md-2 col-3 single-allergence">
+                            <img src="public/images/theme/150w/trans-fat.png" alt="" width="50px">
+                        </div>
+                        <div class="col-md-2 col-3 single-allergence">
+                            <img src="public/images/theme/150w/corn.png" alt="" width="50px">
+                        </div>
+                        <div class="col-md-2 col-3 single-allergence">
+                            <img src="public/images/theme/150w/alcohol.png" alt="" width="50px">
+                        </div>
+                    </div>
+            </section>
+    
+        </div>
+    <!-- Footer Section Begin -->
+    <div class="mt-5 pt-5 footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5 col-xs-12 about-company">
+              <img src="public/images/theme/logo.png" style="height: 60px; width: auto; text-align: center;">
+              <p class="pr-5 text-white-50" style="color: #fff !important">Paprika is a local restaurant in Dhaka which is only one indian restaurant serving desi Breakfast. With our best efforts we try to serve our guests who are the most precious for us.</p>
+              <p><a href="https://www.facebook.com/paprika.dhaka"><i class="fa fa-facebook-square mr-1"></i></a><a href="#"><i class="fa fa-linkedin-square"></i></a></p>
+            </div>
+            <div class="col-lg-3 col-xs-12 links">
+              <h4 class="mt-lg-0 mt-sm-3">Links</h4>
+                <ul class="mt-3 p-0">
+                  <li>- <a href="#">About Us</a></li>
+                  <li>- <a href="#">User Support</a></li>
+                  <li>- <a href="#">Contact Us</a></li>
+                  <li>- <a href="#">Service Policy</a></li>
+                  <li>- <a href="#">Get Started</a></li>
+                  <li>- <a href="#">Privacy and Policy</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-xs-12 location">
+              <h4 class="mt-lg-0 mt-sm-4 mb-3">Location</h4>
+              <p>House No 55, Road No 4A, Saatmasjid Road, Dhanmondi. Opposite of American Burger, before ULAB. 1209 Dhaka, Dhaka Division, Bangladesh</p>
+              <p class="mb-0"><i class="fa fa-phone mr-3"></i>01977-277452</p>
+              <p><i class="fa fa-envelope-o mr-3"></i>contact.paprikabd@gmail.com</p>
+            </div>
+          </div>
+          <div class="col-lg-12 mt-5">
+            <div class="footer__copyright">
+                <div class="footer__copyright__text">
+                    <p>
+                    Copyright ©<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+                    <script type="text/javascript">document.write(new Date().getFullYear());</script> All rights reserved | Design & Developed By <a href="https://mousetechnology.com/" target="_blank">MouseTechnology</a></p>
+                </div>
+                <div class="footer__copyright__links">
+                    <a href="#">Terms</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- Footer Section End -->
+
+    <!-- Js Plugins -->
+    <script src="public/js/jquery-3.3.1.min.js"></script>
+    <script src="public/js/bootstrap.min.js"></script>
+    <script src="public/js/jquery.nice-select.min.js"></script>
+    <script src="public/js/jquery-ui.min.js"></script>
+    <script src="public/js/jquery.nicescroll.min.js"></script>
+    <script src="public/js/jquery.barfiller.js"></script>
+    <script src="public/js/jquery.magnific-popup.min.js"></script>
+    <script src="public/js/jquery.slicknav.js"></script>
+    <script src="public/js/owl.carousel.min.js"></script>
+    <script src="public/js/main.js"></script>
+</body>
+</html>
+
+<style>
+    .active{
+        background-color: #fff !important;
+    }
+    .footer{background: #1b1b1b;color:white;}
+    .links ul {list-style-type: none;}
+    .links ul li a{color: white;transition: color .2s;}
+    .links ul li a:hover{text-decoration:none;color:#4180CB;}
+    .about-company i{font-size: 25px;}
+    .about-company a{color:white;transition: color .2s;}
+    .about-company a:hover{color:#4180CB}
+    .location i{font-size: 18px;}
+    .copyright p{border-top:1px solid rgba(255,255,255,.1);}
+</style>
+
+<link rel="stylesheet" href="public/css/bootstrap-clockpicker.min.css">
+<script src="public/js/bootstrap-clockpicker.min.js"></script>
+<script type="text/javascript">
+    $('.clockpicker').clockpicker();
+</script>
+
